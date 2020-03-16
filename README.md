@@ -29,13 +29,13 @@ to [wiki](https://github.com/Bytetrade/bytetrade-official-api-docs/wiki)
 |Transfer	|[POST /transaction/transfer](#post-transactiontransfer-create-a-transfer-application)	|POST|Create a transfer application|Y|
 
 ####  endpoint
-* mainchain https://api-v2.bytetrade.com
-* testchain https://api-v2-test.bytetrade.com
+* mainchain https://api-v2.byte-trade.com
+* testchain https://api-v2-test.byte-trade.com
 
 #### Other instructions
 ByteTrade Decentralized Exchange has been [CCXT](https://github.com/ccxt/ccxt) Certified, so you can use the CCXT interface to query and trade on ByteTrade. When initializing the ByteTrade instance of CCXT, the incoming apiKey parameter is the user's username in ByteTrade, and the secret parameter is the user's private key.
 
-####  GET /symbols Get all the trading symbols in bytetrade.com
+####  GET /symbols Get all the trading symbols in byte-trade.com
 
  Request:
 None
@@ -45,8 +45,8 @@ Response:
 symbol list
 ```
 
-* [bytetrade market structure](https://api-v2.bytetrade.com/symbols)
-* [testnet bytetrade market structure](https://api-v2-test.bytetrade.com/symbols)
+* [bytetrade market structure](https://api-v2.byte-trade.com/symbols)
+* [testnet bytetrade market structure](https://api-v2-test.byte-trade.com/symbols)
 
  Example:
  
@@ -84,7 +84,7 @@ symbol list
 
 
 
-####  GET /currencies Get currencys supported in bytetrade.com
+####  GET /currencies Get currencys supported in byte-trade.com
 
  Request:
 
@@ -101,8 +101,8 @@ None
 currency list
 ```
 
-* [bytetrade currency structure](https://api-v2.bytetrade.com/currencies)
-* [testnet bytetrade currency structure](https://api-v2-test.bytetrade.com/currencies)
+* [bytetrade currency structure](https://api-v2.byte-trade.com/currencies)
+* [testnet bytetrade currency structure](https://api-v2-test.byte-trade.com/currencies)
 
 Example:
 
@@ -152,8 +152,8 @@ Response:
 ticker list
 ```
 
-* [bytetrade ticker structure](https://api-v2.bytetrade.com/tickers)
-* [testnet bytetrade ticker structure](https://api-v2-test.bytetrade.com/tickers)
+* [bytetrade ticker structure](https://api-v2.byte-trade.com/tickers)
+* [testnet bytetrade ticker structure](https://api-v2-test.byte-trade.com/tickers)
 
 Example:
 ```JavaScript
@@ -193,8 +193,8 @@ Response:
 ```
 depth dict
 ```
-* [bytetrade orderbook structure](https://api-v2.bytetrade.com/depth?symbol=68719476706)
-* [testnet bytetrade orderbook structure](https://api-v2-test.bytetrade.com/depth?symbol=47244640236)
+* [bytetrade orderbook structure](https://api-v2.byte-trade.com/depth?symbol=68719476706)
+* [testnet bytetrade orderbook structure](https://api-v2-test.byte-trade.com/depth?symbol=47244640236)
 
 Example:
 ```JavaScript
@@ -251,8 +251,8 @@ Response:
 ```
 kline list
 ```
-* [bytetrade kline structure](https://api-v2.bytetrade.com/klines?symbol=68719476706&timeframe=1h&limit=500)
-* [testnet bytetrade kline structure](https://api-v2-test.bytetrade.com/klines?symbol=47244640236&timeframe=1h&limit=500)
+* [bytetrade kline structure](https://api-v2.byte-trade.com/klines?symbol=68719476706&timeframe=1h&limit=500)
+* [testnet bytetrade kline structure](https://api-v2-test.byte-trade.com/klines?symbol=47244640236&timeframe=1h&limit=500)
 
 Example:
 
@@ -294,8 +294,8 @@ Response:
 trade list
 ```
 
-* [bytetrade trades structure](https://api-v2.bytetrade.com/trades?symbol=68719476706&limit=500)
-* [testnet bytetrade trades structure](https://api-v2-test.bytetrade.com/trades?symbol=47244640236&limit=500)
+* [bytetrade trades structure](https://api-v2.byte-trade.com/trades?symbol=68719476706&limit=500)
+* [testnet bytetrade trades structure](https://api-v2-test.byte-trade.com/trades?symbol=47244640236&limit=500)
 
 Example:
 ```JavaScript
@@ -317,7 +317,7 @@ Example:
 ```
 
 
-#### GET /balance Get balance in bytetrade.com
+#### GET /balance Get balance in byte-trade.com
 Request:
 
 | Param   | required  | data type     | description    | default   | value range   |
@@ -330,8 +330,8 @@ Response:
 balance list
 ```
 
-* [bytetrade balance structure](https://api-v2.bytetrade.com/balance?userid=bytetrade_token_swaper)
-* [testnet bytetrade balance structure](https://api-v2-test.bytetrade.com/balance?userid=transfer_testnet)
+* [bytetrade balance structure](https://api-v2.byte-trade.com/balance?userid=bytetrade_token_swaper)
+* [testnet bytetrade balance structure](https://api-v2-test.byte-trade.com/balance?userid=transfer_testnet)
 
 Example:
 ```JavaScript
@@ -363,8 +363,8 @@ Response:
 open order list
 ```
 
-* [bytetrade_allorder structure](https://api-v2.bytetrade.com/orders/all?userid=bytetrade_token_swaper)
-* [testnet bytetrade allorder structure](https://api-v2-test.bytetrade.com/orders/all?userid=transfer_testnet)
+* [bytetrade_allorder structure](https://api-v2.byte-trade.com/orders/all?userid=bytetrade_token_swaper)
+* [testnet bytetrade allorder structure](https://api-v2-test.byte-trade.com/orders/all?userid=transfer_testnet)
 
 Example:
 ```JavaScript
@@ -412,8 +412,8 @@ Response:
 open order list
 ```
 
-* [bytetrade openorder structure](https://api-v2.bytetrade.com/orders/open?userid=bytetrade_token_swaper)
-* [testnet bytetrade openorder structure](https://api-v2-test.bytetrade.com/orders/open?userid=transfer_testnet)
+* [bytetrade openorder structure](https://api-v2.byte-trade.com/orders/open?userid=bytetrade_token_swaper)
+* [testnet bytetrade openorder structure](https://api-v2-test.byte-trade.com/orders/open?userid=transfer_testnet)
 
 Example:
 ```JavaScript
@@ -462,8 +462,8 @@ Response:
 closed order list
 ```
 
-* [bytetrade closedorder structure](https://api-v2.bytetrade.com/orders/closed?userid=bytetrade_token_swaper)
-* [testnet bytetrade closedorder structure](https://api-v2-test.bytetrade.com/orders/closed?userid=transfer_testnet)
+* [bytetrade closedorder structure](https://api-v2.byte-trade.com/orders/closed?userid=bytetrade_token_swaper)
+* [testnet bytetrade closedorder structure](https://api-v2-test.byte-trade.com/orders/closed?userid=transfer_testnet)
 
 Example:
 ```JavaScript
@@ -511,8 +511,8 @@ Response:
 order info dict
 ```
 
-* [bytetrade orderinfo structure](https://api-v2.bytetrade.com/orders/2a42c54249f1fd27987848fbb5117b8b4b597235)
-* [testnet bytetrade orderinfo structure](https://api-v2-test.bytetrade.com/orders/2a6922304a976df6ac49fe2780a87d69ac674266)
+* [bytetrade orderinfo structure](https://api-v2.byte-trade.com/orders/2a42c54249f1fd27987848fbb5117b8b4b597235)
+* [testnet bytetrade orderinfo structure](https://api-v2-test.byte-trade.com/orders/2a6922304a976df6ac49fe2780a87d69ac674266)
 
 Example:
 ```JavaScript
@@ -562,8 +562,8 @@ Response:
 ```
 matchresults info list
 ```
-* [bytetrade history trades detail structure](https://api-v2.bytetrade.com/orders/trades?userid=bytetrade_token_swaper)
-* [testnet bytetrade history trades detail structure](https://api-v2-test.bytetrade.com/orders/trades?userid=transfer_testnet)
+* [bytetrade history trades detail structure](https://api-v2.byte-trade.com/orders/trades?userid=bytetrade_token_swaper)
+* [testnet bytetrade history trades detail structure](https://api-v2-test.byte-trade.com/orders/trades?userid=transfer_testnet)
 
 Example:
 ```JavaScript
@@ -606,8 +606,8 @@ Response:
 ```
 deposit address
 ```
-* [bytetrade depositaddress structure](https://api-v2.bytetrade.com/depositaddress?userid=gogogo)
-* [testnet bytetrade depositaddress structure](https://api-v2-test.bytetrade.com/depositaddress?userid=transfer_testnet)
+* [bytetrade depositaddress structure](https://api-v2.byte-trade.com/depositaddress?userid=gogogo)
+* [testnet bytetrade depositaddress structure](https://api-v2-test.byte-trade.com/depositaddress?userid=transfer_testnet)
 
 Example:
 ```JavaScript
@@ -640,8 +640,8 @@ Response:
 ```
 withdrawal list
 ```
-* [bytetrade withdraw structure](https://api-v2.bytetrade.com/withdrawals?userid=gogogo)
-* [testnet bytetrade withdraw structure](https://api-v2-test.bytetrade.com/withdrawals?userid=harvey1340)
+* [bytetrade withdraw structure](https://api-v2.byte-trade.com/withdrawals?userid=gogogo)
+* [testnet bytetrade withdraw structure](https://api-v2-test.byte-trade.com/withdrawals?userid=harvey1340)
 
 Example:
 ```JavaScript
@@ -686,8 +686,8 @@ Response:
 ```
 deposit list
 ```
-* [bytetrade deposit structure](https://api-v2.bytetrade.com/deposits?userid=gogogo)
-* [testnet bytetrade deposit structure](https://api-v2-test.bytetrade.com/deposits?userid=harvey1340)
+* [bytetrade deposit structure](https://api-v2.byte-trade.com/deposits?userid=gogogo)
+* [testnet bytetrade deposit structure](https://api-v2-test.byte-trade.com/deposits?userid=harvey1340)
 
 Example:
 ```JavaScript
@@ -733,8 +733,8 @@ Response:
 ```
 transfer list
 ```
-* [bytetrade transfer structure](https://api-v2.bytetrade.com/transfers?userid=bytetrade_token_swaper)
-* [testnet bytetrade transfer structure](https://api-v2-test.bytetrade.com/transfers?userid=transfer_testnet)
+* [bytetrade transfer structure](https://api-v2.byte-trade.com/transfers?userid=bytetrade_token_swaper)
+* [testnet bytetrade transfer structure](https://api-v2-test.byte-trade.com/transfers?userid=transfer_testnet)
 
 Example:
 ```JavaScript
