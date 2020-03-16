@@ -1,6 +1,7 @@
 # bytetrade-official-api-docs
 
 -Welcome to the bytetrade-official-api-docs wiki!
+to [wiki](https://github.com/Bytetrade/bytetrade-official-api-docs/wiki)
 
 
 ## API List
@@ -1016,8 +1017,3 @@ function transfer(to,asset,amount,message) {
 }
 ```
 
-
-
-
-
-to [wiki](https://github.com/Bytetrade/bytetrade-official-api-docs/wiki)
